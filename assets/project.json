@@ -1,0 +1,29 @@
+[
+    {
+        "id": "museboard",
+        "title": "Museboard (Webアプリ)",
+        "description": "アイデアの投稿、投票、評価を行うためのチーム内コラボレーションツール。現在MVP開発完了。",
+        "category": "Webアプリ",
+        "status": "MVP開発完了",
+        "link": "/museboard",
+        "imageUrl": "assets/images/museboard-thumb.png"
+    },
+    {
+        "id": "aether-bot",
+        "title": "Aether Status Bot (Discord)",
+        "description": "Discordチャンネルに定期的な進捗状況を自動通知するボット。開発チームの状況報告を効率化。",
+        "category": "Discord Bot",
+        "status": "開発中",
+        "link": "https://github.com/liminos/aether-bot",
+        "imageUrl": "assets/images/aetherbot-thumb.png"
+    },
+    {
+        "id": "hypixel-tool",
+        "title": "Hypixel SkyBlock QOL Tool",
+        "description": "Minecraft Hypixel SkyBlockプレイヤー向けに、アイテム管理や統計表示を改善するQOL（Quality of Life）ツール。",
+        "category": "Game Dev",
+        "status": "計画中",
+        "link": null,
+        "imageUrl": "assets/images/hypixel-qol.png"
+    }
+]
