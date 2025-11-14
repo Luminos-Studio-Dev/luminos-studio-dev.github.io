@@ -239,3 +239,93 @@ body {
     padding: 1rem 0;
     font-size: 0.9rem;
 }
+
+/* =========== 7. メンバー紹介セクションのスタイル =========== */
+
+.text-center {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.member-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 3rem;
+}
+
+.member-card {
+    background: var(--bg-card);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.member-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.member-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid var(--primary-color);
+}
+
+.member-card h4 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+.member-card .role {
+    color: var(--secondary-color);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.member-card .tags {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.member-card .tags span {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.tag-mbti {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.tag-focus {
+    background-color: var(--bg-main); /* ダークテーマでは濃い背景 */
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+}
+
+/* ライトテーマ時の tag-focus の調整 */
+body[data-theme="light"] .tag-focus {
+    background-color: var(--bg-main); /* ライトテーマでは明るい背景 */
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+}
+
+.member-card .description {
+    font-size: 1rem;
+    color: var(--text-color);
+    opacity: 0.85;
+}
